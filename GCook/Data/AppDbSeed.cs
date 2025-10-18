@@ -268,7 +268,7 @@ public class AppDbSeed
             PasswordHasher<IdentityUser> pass = new();
             user.PasswordHash = pass.HashPassword(user, "@Etec123");
         }
-        builder.Entity<IdentityUser>().HasData(users);
+        builder.Entity<Usuario>().HasData(users);
         #endregion
 
         #region Populate UserRole - Usuário com Perfil
